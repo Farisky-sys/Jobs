@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b1f3a">
+<title>Security Officer Vacancies | Security Jobs SG</title>
+<meta name="description" content="See all current security officer vacancies in Singapore and apply on WhatsApp.">
+<meta property="og:title" content="Security Officer Vacancies in Singapore">
+<meta property="og:description" content="See all current vacancies and apply on WhatsApp.">
+<meta property="og:type" content="website">
+<!-- FOR EDITORS: do not change the SHEET_URL line or the code that reads the Google Sheet. To add a picture to Facebook link previews, add <meta property="og:image" content="FULL-IMAGE-URL">. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;700&family=Barlow+Condensed:wght@700&display=swap">
+<style>
+:root{--bg:#f3f5f9;--card:#fff;--ink:#0d1b2e;--mute:#566379;--line:#d8dfeb;--navy:#0b1f3a;--navy2:#14355f;--amber:#f5b700;--wa:#16813f;--waink:#fff;--note:#fde8ec;--noteink:#a3132d;--notebd:#d6213f}
+@media(prefers-color-scheme:dark){:root{--bg:#09131f;--card:#122038;--ink:#eef3fb;--mute:#9db0cc;--line:#263a5e;--navy:#050d19;--navy2:#0f2646;--wa:#2bc46d;--waink:#04200f;--note:#3a1420;--noteink:#ff9aab;--notebd:#ff6b81}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.4 Barlow,"Segoe UI",system-ui,sans-serif}
+.wrap{max-width:560px;margin:0 auto;padding:0 16px}
+h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",Barlow,sans-serif;margin:0;line-height:1.05}
+h2{font-size:30px;margin-bottom:10px}
+h3{font-size:26px}
+.hero{background:linear-gradient(rgba(5,13,25,.55),rgba(5,13,25,.88)),var(--hero-img,linear-gradient(160deg,var(--navy),var(--navy2)));background-size:cover;background-position:center;color:#fff;padding:18px 0 42px;position:relative}
+.hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:9px;background:repeating-linear-gradient(135deg,var(--amber) 0 14px,#0b1f3a 14px 28px)}
+.brand{display:flex;align-items:center;gap:10px;font:700 22px "Barlow Condensed","Arial Narrow",sans-serif;letter-spacing:.02em}
+.brand svg{width:30px;height:34px;flex:none}
+.hero h1{font-size:46px;margin:26px 0 10px}
+.lead{font-size:18px;color:#d6e2f5;margin:0 0 20px}
+.stats{display:flex;gap:12px}
+.stats div{flex:1;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.24);border-radius:12px;padding:10px 14px}
+.stats b{display:block;font:700 32px/1 "Barlow Condensed","Arial Narrow",sans-serif;color:var(--amber)}
+.stats span{font-size:15px;color:#d6e2f5}
+.stats .warn{background:#fff;border-color:#fff}
+.stats .warn b{color:#0b1f3a}
+.stats .warn span{color:#c81e3a;font-weight:700;font-size:16px}
+.steps{padding:24px 0 4px}
+ol.st{list-style:none;counter-reset:s;margin:0;padding:0}
+ol.st li{counter-increment:s;display:flex;gap:12px;align-items:flex-start;margin:0 0 10px}
+ol.st li:before{content:counter(s);flex:none;width:30px;height:30px;border-radius:50%;background:var(--navy);color:var(--amber);border:2px solid var(--amber);font:700 18px/26px "Barlow Condensed",sans-serif;text-align:center}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin:14px 0 4px}
+summary{font-weight:700;cursor:pointer}
+details dl{margin:10px 0 0}
+details dl div{display:flex;gap:12px;margin:4px 0}
+details dt{flex:none;width:64px;font-weight:700}
+details dd{margin:0}
+main{padding:18px 0 8px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.chip{font:inherit;font-weight:700;background:var(--card);color:var(--ink);border:2px solid var(--line);border-radius:999px;padding:4px 14px;min-height:40px;cursor:pointer}
+.chip.on{background:var(--navy);color:#fff;border-color:var(--amber)}
+select{font:inherit;width:100%;padding:10px 12px;border-radius:10px;border:2px solid var(--line);background:var(--card);color:var(--ink);min-height:46px;margin-bottom:14px}
+.job{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;margin-bottom:12px}
+.hd{display:flex;gap:14px;align-items:center}
+.badge{flex:none;width:60px;height:68px;display:grid;place-items:center;background:var(--navy);color:var(--amber);border:2px solid var(--amber);border-radius:8px 8px 28px 28px;font:700 24px/1 "Barlow Condensed","Arial Narrow",sans-serif}
+.badge.l3{font-size:19px}
+.bd{flex:1;min-width:0}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px}
+.tag{font-size:13px;font-weight:700;padding:2px 10px;border-radius:999px;background:var(--bg);border:1px solid var(--line)}
+.s-day{background:#fff1b8;color:#5a4200;border-color:#efd15f}
+.s-night{background:#1b2d52;color:#d3e2ff;border-color:#2e4a80}
+.rows{margin:10px 0 0}
+.rows div{display:flex;gap:10px;margin:3px 0}
+.rows dt{flex:none;width:108px;color:var(--mute)}
+.rows dd{margin:0;font-weight:600;min-width:0;overflow-wrap:anywhere}
+.nocall{margin:10px 0 0;padding:6px 10px;border:2px solid var(--notebd);border-radius:10px;background:var(--note);color:var(--noteink);font-weight:700}
+.acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 18px;border-radius:12px;font:inherit;font-weight:700;text-decoration:none;border:0;cursor:pointer}
+.wa{flex:1 1 100%;background:var(--wa);color:var(--waink)}
+.call{background:var(--navy);color:#fff}
+.ghost{background:transparent;color:var(--ink);border:2px solid var(--line)}
+.note{background:var(--card);border:2px dashed var(--line);border-radius:12px;padding:8px 12px;color:var(--mute);margin-bottom:12px}
+.empty{color:var(--mute);text-align:center;padding:24px 0}
+.link{font:inherit;background:none;border:0;color:inherit;text-decoration:underline;padding:6px 0;cursor:pointer}
+footer{padding:8px 0 40px;color:var(--mute);font-size:15px}
+.chip:focus-visible,.btn:focus-visible,.link:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #f59e0b;outline-offset:2px}
+</style>
+</head>
+<body>
+<header class="hero"><!-- HERO PICTURE: add a line inside the first <style> block such as .hero{--hero-img:url("hero.jpg")} -->
+<div class="wrap">
+<div class="brand"><!-- LOGO: replace this svg with <img src="logo.png" alt="Company logo" height="36"> --><svg viewBox="0 0 30 34" aria-hidden="true"><path d="M15 2 3 6.5v9.2c0 8 5.2 13.6 12 16.3 6.8-2.7 12-8.3 12-16.3V6.5z" fill="none" stroke="#f5b700" stroke-width="2.4" stroke-linejoin="round"/><path d="m9.5 16.5 4 4 7-8" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Security Jobs SG</span></div>
+<h1>Security Officer Vacancies in Singapore</h1>
+<p class="lead">Join a professional security team. See the current vacancies below and apply on WhatsApp.</p>
+<div class="stats"><div><b id="count">-</b><span>Open vacancies</span></div><div class="warn"><b>WhatsApp</b><span>DO NOT CALL, text only</span></div></div>
+</div></header>
+<div class="wrap">
+<section class="steps"><h2>How to apply</h2><ol class="st"><li><span>Choose a vacancy below.</span></li><li><span>Tap <b>Apply on WhatsApp</b>. Your message is filled in for you.</span></li><li><span>Add your name and send it.</span></li></ol>
+<details><summary>What do SS, WSS, SSO, WSSO, SO and WSO mean?</summary><dl><div><dt>SS</dt><dd>Security Supervisor</dd></div><div><dt>WSS</dt><dd>Women Security Supervisor</dd></div><div><dt>SSO</dt><dd>Senior Security Officer</dd></div><div><dt>WSSO</dt><dd>Women Senior Security Officer</dd></div><div><dt>SO</dt><dd>Security Officer</dd></div><div><dt>WSO</dt><dd>Women Security Officer</dd></div></dl></details></section>
+<main><h2>Current vacancies</h2><div id="top"></div><div id="list"><p class="empty">Loading vacancies...</p></div></main>
+<footer><p><b>Stay safe:</b> never pay anyone to get a job, and apply only through the WhatsApp contact shown on each vacancy.</p><p id="stamp"></p></footer>
+</div>
+<script>
+const SHEET_URL="https://docs.google.com/spreadsheets/d/e/2PACX-1vS78asH2fBz4e5v5TFr2UzL32-N0-utt_yhzn0ZSLpszi3V0vbfma1Q_VNXb3en9Xr2DAnkoUiDoBg-/pub?gid=887468801&single=true&output=csv";
+const $=id=>document.getElementById(id);
+const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const TY={full:["Full-time","#1f4fd8"],relief:["Relief","#0b7d6e"],adhoc:["Ad hoc","#b45309"],event:["Event","#7c3aed"]};
+const AR=["North","South","East","West","Central","Islandwide"];
+const SAMPLE=[["Women Security Officer (WSO) x1", "51 Cuppage Road, S229469", "Central", "Day shift, 8am to 8pm"], ["Senior Security Officer (SSO) x1", "Eclipse, 1 Fusionopolis View, S138577", "West", "Day shift, 8am to 8pm"], ["Security Officer (SO) x1", "Eclipse, 1 Fusionopolis View, S138577", "West", "Day shift, 8am to 8pm"], ["Security Officer (SO) x1", "Eclipse, 1 Fusionopolis View, S138577", "West", "Night shift, 8pm to 8am"], ["Security Officer (SO) x1", "DODID Data Centre, 71 Tagore Lane, S787496", "North", "Day shift, 8am to 8pm"], ["Security Officer (SO) x1", "3M Tuas Plant, 2 Tuas Link 4, S637321", "West", "Day shift, 8am to 8pm"], ["Security Officer (SO) x1", "Avenue South Residence, Silat Avenue", "South", "Night shift, 8pm to 8am"], ["Security Supervisor (SS) x1", "Leonie Gardens, 23 Leonie Hill, S239224", "Central", "Day shift, 8am to 8pm"], ["Senior Security Officer (SSO) x1", "Leonie Gardens, 23 Leonie Hill, S239224", "Central", "Day shift, 8am to 8pm"]].map(([title,site,area,shift])=>({title,site,area,shift,type:"full",date:"",showPay:false,pay:"",unit:"per month",showBy:true,by:"Feroz, Operations Executive",phone:"81105153",wa:true,email:""}));
+const today=new Date().toLocaleDateString("en-CA");
+const fmt=d=>new Date(d+"T00:00").toLocaleDateString("en-SG",{weekday:"short",day:"numeric",month:"short"});
+let jobs=[],ft="all",fa="all",note="",stamp="";
+function parseCSV(t){const rows=[];let r=[],c="",q=false;
+for(let i=0;i<t.length;i++){const ch=t[i];
+if(q){if(ch==='"'){if(t[i+1]==='"'){c+='"';i++}else q=false}else c+=ch}
+else if(ch==='"')q=true;
+else if(ch===","){r.push(c);c=""}
+else if(ch==="\n"||ch==="\r"){if(ch==="\r"&&t[i+1]==="\n")i++;r.push(c);rows.push(r);r=[];c=""}
+else c+=ch}
+if(c!==""||r.length){r.push(c);rows.push(r)}
+return rows}
+const yes=v=>/^(y|yes|true|1)$/i.test(String(v||"").trim());
+const typeOf=v=>{v=String(v||"").toLowerCase().replace(/[^a-z]/g,"");return v.startsWith("relief")?"relief":v.startsWith("adhoc")?"adhoc":v.startsWith("event")?"event":"full"};
+function toDate(v){v=String(v||"").trim();if(!v)return"";let m=/^(\d{4})-(\d{1,2})-(\d{1,2})$/.exec(v);
+if(m)return m[1]+"-"+m[2].padStart(2,"0")+"-"+m[3].padStart(2,"0");
+m=/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/.exec(v);
+if(m)return m[3]+"-"+m[2].padStart(2,"0")+"-"+m[1].padStart(2,"0");return""}
+function toJobs(rows){if(!rows.length)return[];
+const h=rows[0].map(x=>String(x).trim().toLowerCase().replace(/[^a-z]+/g,"_").replace(/^_|_$/g,""));
+return rows.slice(1).map(r=>{const o={};h.forEach((k,i)=>o[k]=String(r[i]||"").trim());return o})
+.filter(o=>o.title&&!/^(closed|filled)$/i.test(o.status||""))
+.map(o=>{const amt=parseFloat(String(o.salary).replace(/[^0-9.]/g,""));
+return {title:o.title,type:typeOf(o.type),area:AR.find(a=>a.toLowerCase()===String(o.area).toLowerCase())||o.area||"Islandwide",site:o.site,date:toDate(o.date),shift:o.shift,showPay:yes(o.show_salary)&&amt>0,pay:amt>0?String(amt):"",unit:o.salary_unit||"per month",showBy:yes(o.show_contact)&&!!o.contact,by:o.contact,phone:o.phone,wa:yes(o.whatsapp_only),email:o.email}})}
+const both=t=>t.replace(/\((SSO|SS|SO)\)/,(m,c)=>"("+c+" / W"+c+")");
+const clean=t=>String(t||"").replace(/\s*x\s*\d+\s*$/i,"").trim();
+const vac=t=>{const m=/x\s*(\d+)\s*$/i.exec(String(t||""));return m?parseInt(m[1],10):1};
+const abbr=t=>{const m=/\(([A-Za-z]{2,4})\)/.exec(String(t||""));return m?m[1].toUpperCase():"SO"};
+const shiftOf=s=>/night|8pm to 8am/i.test(s||"")?"Night":/day|8am to 8pm/i.test(s||"")?"Day":"";
+function card(p){const lb=(TY[p.type]||TY.full)[0],d=(p.phone||"").replace(/\D/g,""),n=d.length===8?"65"+d:d,t=both(clean(p.title)),k=shiftOf(p.shift),v=vac(p.title),where=[p.site,p.area].filter(Boolean).join(", "),
+wm=encodeURIComponent("Hi, I would like to apply for this vacancy:\n"+t+"\n"+where+(p.shift?"\n"+p.shift:"")+"\n\nMy name: ");
+const row=(a,b)=>`<div><dt>${a}</dt><dd>${b}</dd></div>`;
+return `<article class="job"><div class="hd"><div class="badge${abbr(p.title).length>2?" l3":""}" aria-hidden="true">${esc(abbr(p.title))}</div><div class="bd"><div class="tags"><span class="tag">${lb}</span>${k?`<span class="tag s-${k.toLowerCase()}">${k} shift</span>`:""}<span class="tag">${v} vacanc${v===1?"y":"ies"}</span></div><h3>${esc(t)}</h3></div></div><dl class="rows">${row("Site",esc(where||"To be advised"))}${row("Shift",esc((p.date?fmt(p.date)+", ":"")+(p.shift||"To be advised")))}${row("Salary",p.showPay?"$"+Number(p.pay).toLocaleString("en-SG")+" "+esc(p.unit):"To be disclosed")}${row("Contact person",p.showBy&&p.by?esc(p.by):"Not shown")}</dl>${n&&p.wa?'<p class="nocall">DO NOT CALL. WhatsApp text only.</p>':""}<div class="acts">${n?`<a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/${n}?text=${wm}">Apply on WhatsApp</a>`:""}${n&&!p.wa?`<a class="btn call" href="tel:+${n}">Call</a>`:""}${p.email?`<a class="btn ghost" href="mailto:${esc(p.email)}?subject=${encodeURIComponent("Application: "+t+", "+(p.site||""))}">Email</a>`:""}</div></article>`}
+function render(){const live=jobs.filter(p=>!p.date||p.date>=today),L=live.filter(p=>(ft==="all"||p.type===ft)&&(fa==="all"||p.area===fa));
+$("count").textContent=live.length;
+$("top").innerHTML=(note?`<div class="note">${esc(note)}</div>`:"")+`<div class="chips">${[["all","All"]].concat(Object.entries(TY).map(([k,v])=>[k,v[0]])).map(([k,l])=>`<button class="chip${ft===k?" on":""}" data-ft="${k}">${l}</button>`).join("")}</div><select id="fa" aria-label="Area"><option value="all">All areas</option>${AR.map(a=>`<option${fa===a?" selected":""}>${a}</option>`).join("")}</select>`;
+$("list").innerHTML=L.length?L.map(card).join(""):'<p class="empty">No vacancies match. Try another type or area.</p>';
+$("stamp").innerHTML=stamp?`Updated ${esc(stamp)}. <button class="link" id="rf">Refresh</button>`:"";
+const rf=$("rf");if(rf)rf.onclick=()=>load(false)}
+async function load(silent){const el=$("list");
+if(SHEET_URL.indexOf("PASTE_")>=0){jobs=SAMPLE;note="Setup not finished, so these are sample vacancies.";render();return}
+if(!silent)el.innerHTML='<p class="empty">Loading vacancies...</p>';
+try{const r=await fetch(SHEET_URL,{cache:"no-store"});if(!r.ok)throw new Error("http");
+const t=await r.text();if(/^\s*</.test(t))throw new Error("not csv");
+jobs=toJobs(parseCSV(t));note="";stamp=new Date().toLocaleTimeString("en-SG",{hour:"numeric",minute:"2-digit"});render()}
+catch(e){if(silent)return;el.innerHTML='<p class="empty">Could not load the vacancies. Check your connection and try again.</p><p class="empty"><button class="btn" id="retry">Try again</button></p>';$("retry").onclick=()=>load(false)}}
+document.addEventListener("click",e=>{const t=e.target.closest&&e.target.closest("[data-ft]");if(t){ft=t.dataset.ft;render()}});
+document.addEventListener("change",e=>{if(e.target.id==="fa"){fa=e.target.value;render()}});
+document.addEventListener("visibilitychange",()=>{if(!document.hidden&&SHEET_URL.indexOf("PASTE_")<0)load(true)});
+load(false);
+</script>
+</body>
+</html>
