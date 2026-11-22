@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b1f3a">
+<title>Security Officer Vacancies | Security Jobs SG</title>
+<meta name="description" content="See all current security officer vacancies in Singapore and apply on WhatsApp.">
+<meta property="og:title" content="Security Officer Vacancies in Singapore">
+<meta property="og:description" content="See all current vacancies and apply on WhatsApp.">
+<meta property="og:type" content="website">
+<!-- FOR EDITORS: The Google Sheet URL and data-loading script below are preserved. This page has no external image files. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:light;
+  --bg:#f3f6fa;--card:#fff;--ink:#122640;--mute:#63738a;--line:#dce4ed;
+  --navy:#0b1f3a;--navy2:#173d63;--amber:#f4b849;--wa:#138447;--waink:#fff;
+  --note:#fff4f5;--noteink:#ad1735;--notebd:#de2c4a;
+  --soft:#edf3fa;--shadow:0 8px 28px rgba(15,40,72,.055);
+}
+@media(prefers-color-scheme:dark){
+  :root{color-scheme:dark;--bg:#0b1524;--card:#14243a;--ink:#ecf2fa;--mute:#b4c2d4;--line:#2b405a;--navy:#07182c;--navy2:#163653;--soft:#1b304b;--shadow:0 8px 28px rgba(0,0,0,.15);--note:#381c2b;--noteink:#ffadbd;--notebd:#ff637f;--wa:#1cb768;--waink:#082614}
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:500 15px/1.65 Manrope,"Segoe UI",system-ui,sans-serif;overflow-x:hidden}
+button,select{font:inherit}
+.wrap{width:min(100% - 36px,1000px);margin-inline:auto}
+h1,h2,h3,p{margin-top:0}
+h1,h2,h3{line-height:1.13;letter-spacing:-.025em}
+h1{font-weight:800}
+h2{font-size:clamp(24px,3.3vw,31px);font-weight:800}
+h3{font-size:19px;font-weight:800;overflow-wrap:anywhere}
+.eyebrow{font-weight:800;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#b57a10;margin-bottom:7px}
+/* Abstract architectural header picture: drawn in SVG and embedded in this HTML. No people or company branding. */
+.hero{position:relative;isolation:isolate;min-height:480px;overflow:hidden;background:linear-gradient(119deg,#07182d 12%,#102d4c 67%,#174b73 100%);color:#fff}
+.hero::before{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(90deg,rgba(6,19,38,.96) 0%,rgba(6,23,44,.86) 42%,rgba(6,23,44,.48) 80%),linear-gradient(0deg,rgba(7,20,37,.42),transparent 65%)}
+.hero::after{content:"";position:absolute;bottom:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--amber),#e8d6a7 40%,#346280 100%)}
+.hero-scene{position:absolute;z-index:-2;inset:0;width:100%;height:100%;object-fit:cover;opacity:.86}
+.hero .wrap{position:relative;padding-block:22px 85px}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-bottom:52px}
+.brand{display:flex;align-items:center;gap:11px;min-width:0;text-decoration:none;color:inherit}
+.brand-mark{height:41px;width:41px;flex:none;display:grid;place-items:center;border:1px solid rgba(244,184,73,.65);border-radius:13px;background:rgba(244,184,73,.12)}
+.brand-mark svg{width:23px;height:23px}
+.brand-name{font-weight:800;letter-spacing:-.03em;font-size:19px;line-height:1.05}
+.brand-name small{display:block;margin-top:5px;color:#bacfe3;font-size:10px;letter-spacing:.18em;font-weight:800}
+.nav-caption{flex:none;border:1px solid rgba(221,233,247,.24);border-radius:30px;background:rgba(255,255,255,.06);padding:7px 11px;font-size:10px;font-weight:800;letter-spacing:.09em;color:#cddbee;text-transform:uppercase}
+.hero-main{max-width:715px}
+.hero-kicker{display:inline-flex;align-items:center;gap:8px;margin:0 0 17px;color:#ffcf79;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.hero-kicker:before{content:"";width:20px;height:2px;background:var(--amber)}
+.hero h1{font-size:clamp(42px,6.5vw,66px);max-width:710px;margin:0 0 16px;text-wrap:balance}
+.lead{font-size:clamp(15px,2vw,17px);line-height:1.75;max-width:580px;color:#d5e2f0;margin:0 0 27px}
+.stats{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:12px;max-width:560px}
+.stats>div{min-height:92px;display:flex;flex-direction:column;justify-content:center;padding:17px 20px;border:1px solid rgba(225,237,250,.22);border-radius:14px;background:rgba(255,255,255,.09);backdrop-filter:blur(8px)}
+.stats b{display:block;font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-size:42px;font-weight:800;line-height:1;color:var(--amber)}
+.stats span{display:block;font-size:12px;font-weight:700;color:#d6e3ef;margin-top:5px}
+.stats .warn{background:rgba(255,255,255,.96);border-color:#fff}
+.stats .warn b{font-family:Manrope,"Segoe UI",sans-serif;font-size:18px;letter-spacing:-.02em;color:#142b48}
+.stats .warn span{font-size:12px;color:#ae1a36;margin-top:7px;font-weight:800}
+/* How-to card */
+.steps{position:relative;margin:-43px 0 39px;padding:27px 31px 24px;background:var(--card);border:1px solid var(--line);border-radius:21px;box-shadow:0 18px 42px rgba(13,32,55,.105)}
+.steps h2{margin:0 0 20px}
+ol.st{list-style:none;counter-reset:s;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+ol.st li{counter-increment:s;display:flex;align-items:flex-start;gap:11px;margin:0;color:var(--ink);font-size:13px;font-weight:600;line-height:1.55}
+ol.st li::before{content:counter(s);flex:none;display:grid;place-items:center;width:30px;height:30px;border-radius:10px;background:#eef3fa;color:#183958;border:1px solid #d8e4f1;font-size:13px;font-weight:800}
+@media(prefers-color-scheme:dark){ol.st li::before{background:#273e57;color:#f6d496;border-color:#36516e}}
+ol.st b{color:var(--ink);font-weight:800}
+details{margin:23px 0 0;border-top:1px solid var(--line);padding-top:18px}
+summary{display:flex;align-items:center;gap:11px;cursor:pointer;list-style:none;font-weight:800;color:var(--ink);font-size:13px}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"?";width:22px;height:22px;display:grid;place-items:center;flex:none;background:var(--soft);border:1px solid var(--line);border-radius:50%;font-size:11px}
+summary::after{content:"";margin-left:auto;width:8px;height:8px;border-right:2px solid var(--mute);border-bottom:2px solid var(--mute);transform:rotate(45deg);transition:transform .2s}
+details[open] summary::after{transform:rotate(225deg)}
+details dl{margin:17px 0 0;padding:13px 16px;border:1px solid var(--line);border-radius:12px;background:var(--soft);display:grid;grid-template-columns:1fr 1fr;gap:5px 20px}
+details dl div{display:flex;gap:12px;padding:5px 0;font-size:12px}
+details dt{width:42px;flex:none;color:var(--ink);font-weight:800}
+details dd{margin:0;color:var(--mute)}
+/* Vacancies */
+main{padding:0 0 22px}
+.section-head{margin-bottom:21px}
+.section-head h2{margin:0 0 5px}
+.section-sub{color:var(--mute);font-size:13px;margin:0}
+.filters{padding:17px 18px 4px;border:1px solid var(--line);border-radius:16px;background:var(--card);box-shadow:var(--shadow);margin:0 0 18px}
+.filter-caption{display:block;color:var(--mute);font-size:10px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;margin-bottom:11px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:13px}
+.chip{flex:0 0 auto;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:9px;padding:9px 15px;min-height:42px;cursor:pointer;font-size:12px;font-weight:800;transition:background-color .18s,border-color .18s,box-shadow .18s}
+.chip:hover{border-color:#8ba7c5}
+.chip.on{background:var(--navy);color:#fff;border-color:var(--navy);box-shadow:inset 0 -2px 0 var(--amber)}
+select{display:block;width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);min-height:47px;margin-bottom:14px;font-size:13px;font-weight:700;cursor:pointer}
+.job{position:relative;overflow:hidden;background:var(--card);border:1px solid var(--line);border-radius:17px;padding:22px 23px 20px;margin-bottom:13px;box-shadow:var(--shadow);transition:transform .18s,border-color .18s,box-shadow .18s}
+.job::before{content:"";position:absolute;inset:0 auto 0 0;width:3px;background:linear-gradient(to bottom,var(--amber),transparent 76%)}
+.job:hover{border-color:#b5c9db;box-shadow:0 15px 32px rgba(15,40,72,.09);transform:translateY(-1px)}
+.tags{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-bottom:12px}
+.tag{font-size:10px;font-weight:800;padding:5px 9px;border-radius:6px;background:var(--soft);border:1px solid var(--line);color:var(--ink);letter-spacing:.02em;line-height:1.25}
+.tag:first-child{background:#e9f2fc;border-color:#d1e4f8;color:#23558a}
+.s-day{background:#fff3d4;color:#805600;border-color:#f1d889}
+.s-night{background:#203855;color:#e1eafe;border-color:#365a80}
+@media(prefers-color-scheme:dark){.tag:first-child{background:#1d4168;border-color:#355c82;color:#cbe5ff}}
+.job h3{margin:0;max-width:740px}
+.short{margin:4px 0 0;font-size:11px;font-weight:800;letter-spacing:.09em;color:var(--mute)}
+.rows{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 21px;margin:19px 0 0;padding:17px 0 0;border-top:1px solid var(--line)}
+.rows div{display:block;min-width:0}
+.rows dt{color:var(--mute);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;margin-bottom:3px}
+.rows dd{margin:0;color:var(--ink);font-size:13px;font-weight:700;line-height:1.55;overflow-wrap:anywhere}
+.nocall{display:flex;align-items:center;gap:10px;margin:17px 0 0;padding:12px 14px;border:1.5px solid var(--notebd);border-radius:10px;background:var(--note);color:var(--noteink);font-size:12px;font-weight:800;line-height:1.45}
+.nocall::before{content:"!";display:grid;place-items:center;width:20px;height:20px;flex:none;border-radius:50%;background:var(--notebd);color:#fff;font-size:13px;font-weight:800}
+.acts{display:flex;gap:9px;flex-wrap:wrap;margin-top:15px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:51px;padding:12px 18px;border-radius:11px;font-family:inherit;font-size:13px;line-height:1.2;font-weight:800;text-align:center;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:filter .18s,transform .18s}
+.btn:hover{filter:brightness(1.06);transform:translateY(-1px)}
+.wa{flex:1 1 100%;background:var(--wa);color:var(--waink);box-shadow:0 5px 12px rgba(13,112,54,.12)}
+.wa::before{content:"";display:inline-block;width:19px;height:19px;flex:none;background:currentColor;mask:url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"%3E%3Cpath fill="black" d="M12.04 2C6.55 2 2.1 6.43 2.1 11.9c0 1.75.46 3.46 1.34 4.96L2 22l5.31-1.39a9.98 9.98 0 0 0 4.73 1.2h.01c5.47 0 9.94-4.44 9.95-9.9A9.84 9.84 0 0 0 19.09 4.9 9.9 9.9 0 0 0 12.04 2Zm.01 18.1a8.3 8.3 0 0 1-4.23-1.15l-.3-.18-3.15.82.84-3.05-.2-.32a8.17 8.17 0 0 1-1.26-4.32c0-4.55 3.72-8.25 8.3-8.25a8.2 8.2 0 0 1 5.88 2.43 8.12 8.12 0 0 1 2.43 5.83 8.3 8.3 0 0 1-8.31 8.19Zm4.57-6.2c-.25-.12-1.48-.73-1.71-.81-.23-.08-.4-.12-.57.13-.17.25-.65.81-.8.98-.15.17-.3.19-.55.06-.25-.12-1.06-.39-2.02-1.25-.75-.66-1.25-1.49-1.4-1.74-.15-.25-.02-.38.11-.51.11-.11.25-.3.37-.44.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.44-.06-.13-.57-1.37-.78-1.88-.2-.49-.4-.42-.57-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.44 1.03 2.6c.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.52.6.19 1.15.16 1.59.1.49-.07 1.48-.6 1.69-1.19.21-.59.21-1.1.15-1.2-.06-.11-.23-.17-.48-.3Z"/%3E%3C/svg%3E') center / contain no-repeat}
+.call{background:var(--navy);color:#fff}
+.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.note{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:11px 14px;color:var(--mute);margin-bottom:15px;font-size:12px}
+.empty{color:var(--mute);text-align:center;padding:32px 12px;font-size:13px}
+.empty .btn{background:var(--navy);color:#fff}
+.link{font:inherit;font-size:inherit;background:none;border:0;color:inherit;text-decoration:underline;text-underline-offset:2px;padding:6px 2px;cursor:pointer}
+footer{margin-top:10px;border-top:1px solid var(--line);padding:19px 0 48px;color:var(--mute);font-size:12px}
+footer p{max-width:720px;margin:0 0 7px}
+footer b{color:var(--ink)}
+.chip:focus-visible,.btn:focus-visible,.link:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #f59e0b;outline-offset:3px}
+@media(min-width:800px){.hero-scene{object-position:center}.job{padding:24px 28px}.rows{grid-template-columns:1.25fr 1fr 1fr 1.1fr;gap:18px}.job h3{font-size:21px}}
+@media(max-width:670px){
+  body{font-size:14px}.wrap{width:min(100% - 30px,560px)}
+  .hero{min-height:0}
+  .hero .wrap{padding:18px 0 77px}
+  .hero-scene{opacity:.5;object-position:63% center}
+  .hero::before{background:linear-gradient(90deg,rgba(6,19,38,.92),rgba(6,20,39,.78)),linear-gradient(0deg,rgba(7,20,37,.55),transparent)}
+  .nav{padding-bottom:51px;align-items:center}
+  .brand-mark{width:37px;height:37px;border-radius:11px}
+  .brand-name{font-size:17px}
+  .nav-caption{font-size:9px;padding:6px 8px}
+  .hero h1{font-size:clamp(36px,8.9vw,50px);letter-spacing:-.035em}
+  .lead{font-size:14px;line-height:1.7;margin-bottom:21px}
+  .stats{gap:9px}
+  .stats>div{min-height:88px;padding:13px 12px;border-radius:11px}
+  .stats b{font-size:36px}
+  .stats .warn b{font-size:16px}
+  .stats span,.stats .warn span{font-size:10px}
+  .steps{margin-top:-41px;padding:22px 19px 20px;border-radius:17px;margin-bottom:35px}
+  .steps h2{margin-bottom:18px}
+  ol.st{grid-template-columns:1fr;gap:13px}
+  ol.st li{font-size:12px;align-items:center}
+  details{margin-top:21px}
+  details dl{grid-template-columns:1fr;padding:10px 13px}
+  .filters{padding:15px 14px 2px}
+  .chips{gap:7px}
+  .chip{padding:9px 13px;min-height:41px}
+  .job{padding:18px 17px 17px}
+  .job h3{font-size:18px}
+  .rows{gap:13px 12px;margin-top:17px;padding-top:15px}
+  .rows dt{font-size:9px}
+  .rows dd{font-size:12px}
+  .nocall{font-size:11px;padding:11px 12px}
+}
+@media(max-width:360px){.nav-caption{display:none}.stats{grid-template-columns:1fr 1.16fr}.rows{grid-template-columns:1fr}.hero h1{font-size:35px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="hero">
+<!-- Built-in architectural header illustration, not a company logo or an external image. -->
+<svg class="hero-scene" viewBox="0 0 1440 560" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Decorative illustration of modern office buildings in Singapore" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0a1f3d"/><stop offset=".6" stop-color="#1a4467"/><stop offset="1" stop-color="#356a88"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#416c8a"/><stop offset=".42" stop-color="#1b3554"/><stop offset="1" stop-color="#11243e"/></linearGradient>
+    <linearGradient id="tower" x1="0" y1="0" x2="1" y2=".2"><stop stop-color="#254c70"/><stop offset=".47" stop-color="#6388a1"/><stop offset=".53" stop-color="#1e3b5d"/><stop offset="1" stop-color="#10253f"/></linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#0a1a31"/><stop offset="1" stop-color="#234f6d"/></linearGradient>
+    <pattern id="win" width="29" height="36" patternUnits="userSpaceOnUse"><path d="M2 0V36M0 2H29" stroke="#a5d4e0" stroke-opacity=".3" stroke-width="1"/><path d="M8 10h11v15H8z" fill="#e2e4ba" opacity=".1"/></pattern>
+    <pattern id="wina" width="30" height="40" patternUnits="userSpaceOnUse"><path d="M2 0V40M0 2H30" stroke="#c0dce3" stroke-opacity=".35" stroke-width="1"/><rect x="9" y="11" width="11" height="20" rx="1" fill="#e9c981" opacity=".24"/></pattern>
+    <radialGradient id="glow"><stop stop-color="#e0bc77" stop-opacity=".54"/><stop offset="1" stop-color="#e0bc77" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1440" height="560" fill="url(#sky)"/>
+  <circle cx="1135" cy="174" r="236" fill="url(#glow)" opacity=".7"/>
+  <path d="M0 385Q180 357 320 386T700 382T1100 386T1440 356V560H0Z" fill="#132d49" opacity=".64"/>
+  <!-- distant city line -->
+  <g fill="#234d69" opacity=".58"><path d="M440 245h66v176h-66zM516 292h39v128h-39zM566 258h72v163h-72zM647 315h54v105h-54zM710 288h75v135h-75zM791 225h72v196h-72zM875 302h44v121h-44zM930 269h60v152h-60zM1003 310h63v110h-63zM1075 265h52v154h-52zM1140 310h40v109h-40z"/></g>
+  <!-- office buildings, no people and no signs -->
+  <g>
+    <path d="M760 136l132-33 27 16v310H760Z" fill="url(#glass)" stroke="#91b6c4" stroke-opacity=".28" stroke-width="2"/>
+    <path d="M761 137l132-34v324H761Z" fill="url(#win)" opacity=".8"/>
+    <path d="M891 103l27 16v307h-27Z" fill="#0a1c33" opacity=".75"/>
+    <path d="M955 26l170-18 25 31v402H955Z" fill="url(#tower)" stroke="#b0d1df" stroke-opacity=".25" stroke-width="2"/>
+    <path d="M956 27l169-18v414H956Z" fill="url(#wina)"/>
+    <path d="M1125 9l25 30v399h-25Z" fill="#0c213b" opacity=".86"/>
+    <path d="M1170 90l151-13 26 22v352h-177Z" fill="url(#glass)" stroke="#9fcee0" stroke-opacity=".24" stroke-width="2"/>
+    <path d="M1170 90l151-13v358h-151Z" fill="url(#win)"/>
+    <path d="M1321 77l26 22v346h-26Z" fill="#0d2740"/>
+    <path d="M1336 199l135 10v236h-135Z" fill="url(#tower)"/>
+    <path d="M1336 200l135 10v226h-135Z" fill="url(#wina)" opacity=".8"/>
+  </g>
+  <!-- abstract illuminated entry canopy / clean city architecture -->
+  <path d="M693 380h785v17H693Z" fill="#1d3952"/>
+  <path d="M700 380h741v3H700Z" fill="#f5cc79" opacity=".56"/>
+  <path d="M714 395h21v112h-21zM1006 395h18v112h-18zM1359 395h19v112h-19z" fill="#7396a7" opacity=".58"/>
+  <path d="M0 482C373 450 829 468 1440 443v117H0Z" fill="url(#road)"/>
+  <path d="M610 463c246-7 509 6 830-19" stroke="#bfccd0" stroke-opacity=".35" stroke-width="2" fill="none"/>
+  <path d="M590 538c289-28 563-42 850-50" stroke="#ecb955" stroke-opacity=".19" stroke-width="2" fill="none"/>
+  <g fill="#ffd590" opacity=".7"><circle cx="848" cy="405" r="3"/><circle cx="1048" cy="408" r="3"/><circle cx="1270" cy="403" r="3"/></g>
+</svg>
+<div class="wrap">
+  <div class="nav">
+    <div class="brand">
+      <!-- A universal jobs pictogram; not an employer/company logo. -->
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="7" width="18" height="13" rx="2.5" stroke="#f5c36d" stroke-width="1.7"/><path d="M9 7V5.5C9 4.67 9.67 4 10.5 4h3c.83 0 1.5.67 1.5 1.5V7M3 12.5c5.75 3 12.25 3 18 0M11 14h2" stroke="#f5c36d" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+      <span class="brand-name">Security Jobs SG<small>SECURITY CAREERS • SINGAPORE</small></span>
+    </div>
+    <span class="nav-caption">Job opportunities</span>
+  </div>
+  <div class="hero-main">
+    <p class="hero-kicker">Explore security careers</p>
+    <h1>Security Officer Vacancies in Singapore</h1>
+    <p class="lead">Find your next opportunity. Browse current security vacancies across Singapore and apply directly through WhatsApp.</p>
+    <div class="stats">
+      <div><b id="count">-</b><span>Open vacancies</span></div>
+      <div class="warn"><b>WhatsApp applications</b><span>DO NOT CALL, text only</span></div>
+    </div>
+  </div>
+</div>
+</header>
+<div class="wrap">
+  <section class="steps" aria-labelledby="apply-title">
+    <div class="eyebrow">Quick &amp; straightforward</div>
+    <h2 id="apply-title">How to apply</h2>
+    <ol class="st">
+      <li><span>Choose a vacancy below.</span></li>
+      <li><span>Tap <b>Apply on WhatsApp</b>. Your message is filled in for you.</span></li>
+      <li><span>Add your name and send it.</span></li>
+    </ol>
+    <details>
+      <summary>What do SS, WSS, SSO, WSSO, SO and WSO mean?</summary>
+      <dl>
+        <div><dt>SS</dt><dd>Security Supervisor</dd></div>
+        <div><dt>WSS</dt><dd>Women Security Supervisor</dd></div>
+        <div><dt>SSO</dt><dd>Senior Security Officer</dd></div>
+        <div><dt>WSSO</dt><dd>Women Senior Security Officer</dd></div>
+        <div><dt>SO</dt><dd>Security Officer</dd></div>
+        <div><dt>WSO</dt><dd>Women Security Officer</dd></div>
+      </dl>
+    </details>
+  </section>
+  <main>
+    <div class="section-head"><div class="eyebrow">Opportunities</div><h2>Current vacancies</h2><p class="section-sub">Filter listings by employment type and location to find a suitable role.</p></div>
+    <div class="filters"><span class="filter-caption">Filter vacancies</span><div id="top"></div></div>
+    <div id="list" aria-live="polite"><p class="empty">Loading vacancies...</p></div>
+  </main>
+  <footer>
+    <p><b>Stay safe:</b> never pay anyone to get a job, and apply only through the WhatsApp contact shown on each vacancy.</p>
+    <p id="stamp"></p>
+  </footer>
+</div>
+<script>
+const SHEET_URL="https://docs.google.com/spreadsheets/d/e/2PACX-1vS78asH2fBz4e5v5TFr2UzL32-N0-utt_yhzn0ZSLpszi3V0vbfma1Q_VNXb3en9Xr2DAnkoUiDoBg-/pub?gid=887468801&single=true&output=csv";
+const $=id=>document.getElementById(id);
+const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const TY={full:["Full-time","#1f4fd8"],relief:["Relief","#0b7d6e"],adhoc:["Ad hoc","#b45309"],event:["Event","#7c3aed"]};
+const AR=["North","South","East","West","Central","Islandwide"];
+const SAMPLE=[["Women Security Officer (WSO) x1", "51 Cuppage Road, S229469", "Central", "Day shift, 8am to 8pm"], ["Senior Security Officer (SSO) x1", "Eclipse, 1 Fusionopolis View, S138577", "West", "Day shift, 8am to 8pm"], ["Security Officer (SO) x1", "Eclipse, 1 Fusionopolis View, S138577", "West", "Day shift, 8am to 8pm"], ["Security Officer (SO) x1", "Eclipse, 1 Fusionopolis View, S138577", "West", "Night shift, 8pm to 8am"], ["Security Officer (SO) x1", "DODID Data Centre, 71 Tagore Lane, S787496", "North", "Day shift, 8am to 8pm"], ["Security Officer (SO) x1", "3M Tuas Plant, 2 Tuas Link 4, S637321", "West", "Day shift, 8am to 8pm"], ["Security Officer (SO) x1", "Avenue South Residence, Silat Avenue", "South", "Night shift, 8pm to 8am"], ["Security Supervisor (SS) x1", "Leonie Gardens, 23 Leonie Hill, S239224", "Central", "Day shift, 8am to 8pm"], ["Senior Security Officer (SSO) x1", "Leonie Gardens, 23 Leonie Hill, S239224", "Central", "Day shift, 8am to 8pm"]].map(([title,site,area,shift])=>({title,site,area,shift,type:"full",date:"",showPay:false,pay:"",unit:"per month",showBy:true,by:"Feroz, Operations Executive",phone:"81105153",wa:true,email:""}));
+const today=new Date().toLocaleDateString("en-CA");
+const fmt=d=>new Date(d+"T00:00").toLocaleDateString("en-SG",{weekday:"short",day:"numeric",month:"short"});
+let jobs=[],ft="all",fa="all",note="",stamp="";
+function parseCSV(t){const rows=[];let r=[],c="",q=false;
+for(let i=0;i<t.length;i++){const ch=t[i];
+if(q){if(ch==='"'){if(t[i+1]==='"'){c+='"';i++}else q=false}else c+=ch}
+else if(ch==='"')q=true;
+else if(ch===","){r.push(c);c=""}
+else if(ch==="\n"||ch==="\r"){if(ch==="\r"&&t[i+1]==="\n")i++;r.push(c);rows.push(r);r=[];c=""}
+else c+=ch}
+if(c!==""||r.length){r.push(c);rows.push(r)}
+return rows}
+const yes=v=>/^(y|yes|true|1)$/i.test(String(v||"").trim());
+const typeOf=v=>{v=String(v||"").toLowerCase().replace(/[^a-z]/g,"");return v.startsWith("relief")?"relief":v.startsWith("adhoc")?"adhoc":v.startsWith("event")?"event":"full"};
+function toDate(v){v=String(v||"").trim();if(!v)return"";let m=/^(\d{4})-(\d{1,2})-(\d{1,2})$/.exec(v);
+if(m)return m[1]+"-"+m[2].padStart(2,"0")+"-"+m[3].padStart(2,"0");
+m=/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/.exec(v);
+if(m)return m[3]+"-"+m[2].padStart(2,"0")+"-"+m[1].padStart(2,"0");return""}
+function toJobs(rows){if(!rows.length)return[];
+const h=rows[0].map(x=>String(x).trim().toLowerCase().replace(/[^a-z]+/g,"_").replace(/^_|_$/g,""));
+return rows.slice(1).map(r=>{const o={};h.forEach((k,i)=>o[k]=String(r[i]||"").trim());return o})
+.filter(o=>o.title&&!/^(closed|filled)$/i.test(o.status||""))
+.map(o=>{const amt=parseFloat(String(o.salary).replace(/[^0-9.]/g,""));
+return {title:o.title,type:typeOf(o.type),area:AR.find(a=>a.toLowerCase()===String(o.area).toLowerCase())||o.area||"Islandwide",site:o.site,date:toDate(o.date),shift:o.shift,showPay:yes(o.show_salary)&&amt>0,pay:amt>0?String(amt):"",unit:o.salary_unit||"per month",showBy:yes(o.show_contact)&&!!o.contact,by:o.contact,phone:o.phone,wa:yes(o.whatsapp_only),email:o.email}})}
+const clean=t=>String(t||"").replace(/\s*x\s*\d+\s*$/i,"").trim();
+const vac=t=>{const m=/x\s*(\d+)\s*$/i.exec(String(t||""));return m?parseInt(m[1],10):1};
+const shiftOf=s=>/night|8pm to 8am/i.test(s||"")?"Night":/day|8am to 8pm/i.test(s||"")?"Day":"";
+function card(p){const lb=(TY[p.type]||TY.full)[0],d=(p.phone||"").replace(/\D/g,""),n=d.length===8?"65"+d:d,bt=clean(p.title),cd=(/\(([A-Za-z]{2,4})\)/.exec(bt)||[])[1]||"",name=bt.replace(/\s*\([A-Za-z]{2,4}\)\s*/," ").trim(),short=/^(SSO|SS|SO)$/i.test(cd)?cd.toUpperCase()+" / W"+cd.toUpperCase():cd.toUpperCase(),t=name+(short?" ("+short+")":""),k=shiftOf(p.shift),v=vac(p.title),where=[p.site,p.area].filter(Boolean).join(", "),
+wm=encodeURIComponent("Hi, I would like to apply for this vacancy:\n"+t+"\n"+where+(p.shift?"\n"+p.shift:"")+"\n\nMy name: ");
+const row=(a,b)=>`<div><dt>${a}</dt><dd>${b}</dd></div>`;
+return `<article class="job"><div class="tags"><span class="tag">${lb}</span>${k?`<span class="tag s-${k.toLowerCase()}">${k} shift</span>`:""}<span class="tag">${v} vacanc${v===1?"y":"ies"}</span></div><h3>${esc(name)}</h3>${short?`<p class="short">${esc(short)}</p>`:""}<dl class="rows">${row("Site",esc(where||"To be advised"))}${row("Shift",esc((p.date?fmt(p.date)+", ":"")+(p.shift||"To be advised")))}${row("Salary",p.showPay?"$"+Number(p.pay).toLocaleString("en-SG")+" "+esc(p.unit):"To be disclosed")}${row("Contact person",p.showBy&&p.by?esc(p.by):"Not shown")}</dl>${n&&p.wa?'<p class="nocall">DO NOT CALL. WhatsApp text only.</p>':""}<div class="acts">${n?`<a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/${n}?text=${wm}">Apply on WhatsApp</a>`:""}${n&&!p.wa?`<a class="btn call" href="tel:+${n}">Call</a>`:""}${p.email?`<a class="btn ghost" href="mailto:${esc(p.email)}?subject=${encodeURIComponent("Application: "+t+", "+(p.site||""))}">Email</a>`:""}</div></article>`}
+function render(){const live=jobs.filter(p=>!p.date||p.date>=today),L=live.filter(p=>(ft==="all"||p.type===ft)&&(fa==="all"||p.area===fa));
+$("count").textContent=live.length;
+$("top").innerHTML=(note?`<div class="note">${esc(note)}</div>`:"")+`<div class="chips">${[["all","All"]].concat(Object.entries(TY).map(([k,v])=>[k,v[0]])).map(([k,l])=>`<button class="chip${ft===k?" on":""}" data-ft="${k}">${l}</button>`).join("")}</div><select id="fa" aria-label="Area"><option value="all">All areas</option>${AR.map(a=>`<option${fa===a?" selected":""}>${a}</option>`).join("")}</select>`;
+$("list").innerHTML=L.length?L.map(card).join(""):'<p class="empty">No vacancies match. Try another type or area.</p>';
+$("stamp").innerHTML=stamp?`Updated ${esc(stamp)}. <button class="link" id="rf">Refresh</button>`:"";
+const rf=$("rf");if(rf)rf.onclick=()=>load(false)}
+async function load(silent){const el=$("list");
+if(SHEET_URL.indexOf("PASTE_")>=0){jobs=SAMPLE;note="Setup not finished, so these are sample vacancies.";render();return}
+if(!silent)el.innerHTML='<p class="empty">Loading vacancies...</p>';
+try{const r=await fetch(SHEET_URL,{cache:"no-store"});if(!r.ok)throw new Error("http");
+const t=await r.text();if(/^\s*</.test(t))throw new Error("not csv");
+jobs=toJobs(parseCSV(t));note="";stamp=new Date().toLocaleTimeString("en-SG",{hour:"numeric",minute:"2-digit"});render()}
+catch(e){if(silent)return;el.innerHTML='<p class="empty">Could not load the vacancies. Check your connection and try again.</p><p class="empty"><button class="btn" id="retry">Try again</button></p>';$("retry").onclick=()=>load(false)}}
+document.addEventListener("click",e=>{const t=e.target.closest&&e.target.closest("[data-ft]");if(t){ft=t.dataset.ft;render()}});
+document.addEventListener("change",e=>{if(e.target.id==="fa"){fa=e.target.value;render()}});
+document.addEventListener("visibilitychange",()=>{if(!document.hidden&&SHEET_URL.indexOf("PASTE_")<0)load(true)});
+load(false);
+</script>
+</body>
+</html>
